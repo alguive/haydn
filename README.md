@@ -31,7 +31,7 @@ The server directory to your ./src folder
 ```
 
 ### Hosts files
-You will need to add your hostname to you hosts file: ***/private/etc/hosts***. [This is in MacOS]
+You will need to add your hostname to you hosts file: ***/private/etc/hosts***. [In MacOS]
 
 Also you will need to change the **hosts** file inside the ansible directory with your **IP** and optionally with a custom ***user*** and ***vagrant***.
 
