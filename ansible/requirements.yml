@@ -1,4 +1,9 @@
 - geerlingguy.repo-epel
 - geerlingguy.repo-remi
+- geerlingguy.ntp
 - geerlingguy.nginx
 - geerlingguy.php
+- geerlingguy.mysql
+- geerlingguy.php-mysql
+- geerlingguy.nodejs
+- geerlingguy.composer

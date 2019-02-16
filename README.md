@@ -8,6 +8,18 @@ Simple Vagrant + Ansible LEMP setup with **Nginx**, **PHP7** and **MariaDB** on 
  * Ansible
  * Vagrant
 
+## Installation
+
+1. ```git clone https://github.com/alvarogv7/haydn.git```
+2. ```cd haydn```
+3. Follow ***Configuration*** steps
+4. ```Vagrant up```
+5. ```cd ansible```
+6. ```ansible-galaxy install -r requirements.yml || ansible-galaxy install -r requirements.yml --force```
+7. ```ansible-playbook -i hosts playbook.yml```
+
+If after following the steps, the machine doesn't get up, maybe you will need to execute: ***vagrant reload --provision***.
+
  
 ## Configuration
 
@@ -49,3 +61,7 @@ root: /var/www/haydn
 extra_parameters: |
   include /var/www/haydn/nginx.conf;
 ```
+
+--
+
+Thanks to [Sebas](https://github.com/sfblaauw) for his teachings and knowledge ♥.
