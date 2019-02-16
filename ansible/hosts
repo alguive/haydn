@@ -1,0 +1,2 @@
+[all]
+dev ansible_host=10.10.30.40 ansible_user=vagrant ansible_password=vagrant

@@ -1,0 +1,9 @@
+- name: Configure php-fpm pool.
+  blockinfile:
+    path: "{{ php_fpm_pool_conf_path }}"
+    block: |
+      listen.owner = {{ nginx_user }}
+      listen.group = {{ nginx_user }}
+      listen.mode = 0660
+    marker: "; {mark} ANSIBLE MANAGED BLOCK"
+  notify: restart php-fpm
