@@ -30,20 +30,20 @@ The hostname will be the URL to your project.
   config.vm.hostname = "haydn.test"
 ```
 
-The network IP to your project
+The network IP to your project.
 
 ```
   config.vm.network "private_network", ip: "10.10.30.40"
 ```
 
-The server directory to your ./src folder
+The server directory to your ./src folder.
 
 ```
   config.vm.synced_folder "./src", "/var/www/haydn"
 ```
 
 ### Hosts files
-You will need to add your hostname to you hosts file: ***/private/etc/hosts***. [In MacOS]
+You will need to add your hostname to you hosts file: ***/private/etc/hosts***. [In MacOS].
 
 Also you will need to change the **hosts** file inside the ansible directory with your **IP** and optionally with a custom ***user*** and ***vagrant***.
 
