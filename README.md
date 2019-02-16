@@ -53,9 +53,15 @@ dev ansible_host=10.10.30.40 ansible_user=vagrant ansible_password=vagrant
 
 ### Playbook file
 
-You will need to change the **server_name**, **root** and the **include** route from **extra_parameters** param to those you have set before.
+You will need to change the **mysql_users** and **mysql_databases** params, **server_name**, **root** and the **include** route from **extra_parameters** param to those you have set before. ***[haydn]***
 
 ```
+mysql_users:
+  - name: haydn
+    password: haydn
+mysql_databases:
+  - name: haydn
+
 server_name: "haydn.test"
 root: /var/www/haydn
 extra_parameters: |
