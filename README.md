@@ -20,7 +20,7 @@ Simple Vagrant + Ansible LEMP setup with **Nginx**, **PHP7** and **MariaDB** on 
 
 If after following the steps, the machine doesn't get up, maybe you will need to execute: ***vagrant reload --provision***.
 
- 
+
 ## Configuration
 
 ### Vagrantfile
