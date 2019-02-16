@@ -27,17 +27,25 @@ The network IP to your project
 The server directory to your ./src folder
 
 ```
-  config.vm.synced_folder "./src", "/var/www/haydn",
+  config.vm.synced_folder "./src", "/var/www/haydn"
 ```
 
-### Hosts file
+### Hosts files
 You will need to add your hostname to you hosts file: ***/private/etc/hosts***. [This is in MacOS]
+
+Also you will need to change the **hosts** file inside the ansible directory with your **IP** and optionally with a custom ***user*** and ***vagrant***.
+
+```
+dev ansible_host=10.10.30.40 ansible_user=vagrant ansible_password=vagrant
+```
 
 ### Playbook file
 
-You will need to change the **server_name** and **root** params to those you have set before.
+You will need to change the **server_name**, **root** and the **include** route from **extra_parameters** param to those you have set before.
 
 ```
 server_name: "haydn.test"
 root: /var/www/haydn
+extra_parameters: |
+  include /var/www/haydn/nginx.conf;
 ```
