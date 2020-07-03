@@ -69,5 +69,3 @@ extra_parameters: |
 ```
 
 --
-
-Thanks to [Sebas](https://github.com/sfblaauw) for his teachings and knowledge ♥.
